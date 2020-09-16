@@ -4,11 +4,17 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": [{
+        "type": "path",
+        "url": "D:\\www\\laravel\\packages\\bachphuc\\shopy"
+    }],
     "require": {
         "php": ">=7.0.0",
         "bachphuc/laravel-html-elements": "^1.0",
         "bachphuc/php-laravel-helpers": "^1.0",
+        "bachphuc/shopy": "dev-master",
         "fideloper/proxy": "~3.3",
+        "intervention/image": "^2.5",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0"
     },

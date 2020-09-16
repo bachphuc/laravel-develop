@@ -7,6 +7,8 @@ use bachphuc\LaravelHTMLElements\Information;
 use bachphuc\LaravelHTMLElements\Components\Text;
 use bachphuc\LaravelHTMLElements\Components\Form;
 
+use Shopy;
+
 class IndexController extends Controller
 {
     /**
@@ -26,6 +28,9 @@ class IndexController extends Controller
      */
     public function index()
     {
+        // echo '2020-09-16 16:35:45';
+        // $date = new \DateTime('2020-09-16T16:35:45+0700');
+        // var_dump($date);die;
         $info = new Information();
         // return $info->display();
 
@@ -72,5 +77,11 @@ class IndexController extends Controller
         return view('form', [
             'form' => $form
         ]);
+    }
+
+    public function shopy(){
+        $information = new \bachphuc\Shopy\Version();
+        Shopy::test();
+        return $information->display();
     }
 }

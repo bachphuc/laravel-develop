@@ -31,3 +31,10 @@ Route::resource('news', 'ManageNewController');
 Route::group(['prefix' => 'my', 'as' => 'my.'], function(){
     Route::resource('books', 'ManageMyBookController');
 });
+
+Route::get('/shopy', 'IndexController@shopy');
+
+
+Shopy::routes();
+
+Shopy::adminRoutes();
