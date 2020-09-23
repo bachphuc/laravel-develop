@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use bachphuc\LaravelHTMLElements\Http\Controllers\ManageBaseController;
 
+use bachphuc\LaravelHTMLElements\Components\Form;
+use bachphuc\LaravelHTMLElements\Components\ViewGroup;
+use bachphuc\LaravelHTMLElements\Components\Section;
+
 class ManageBookController extends ManageBaseController{
     protected $modelName = 'book';
     protected $model = 'book';
@@ -60,4 +64,6 @@ class ManageBookController extends ManageBaseController{
     public function processTable(&$table){
 
     }
+
+    
 }

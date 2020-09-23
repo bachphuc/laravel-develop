@@ -7,12 +7,26 @@
     "repositories": [{
         "type": "path",
         "url": "D:\\www\\laravel\\packages\\bachphuc\\shopy"
+    }, {
+        "type": "path",
+        "url": "D:\\www\\laravel\\packages\\bachphuc\\laravel-html-elements"
+    }, {
+        "type": "path",
+        "url": "D:\\www\\laravel\\packages\\bachphuc\\php-laravel-helpers"
+    }, {
+        "type": "path",
+        "url": "D:\\www\\laravel\\packages\\bachphuc\\laravel-gallery-image"
+    },  {
+        "type": "path",
+        "url": "D:\\www\\laravel\\packages\\bachphuc\\laravel-custom-fields"
     }],
     "require": {
         "php": ">=7.0.0",
-        "bachphuc/laravel-html-elements": "^1.0",
-        "bachphuc/php-laravel-helpers": "^1.0",
+        "bachphuc/laravel-html-elements": "dev-master",
+        "bachphuc/php-laravel-helpers": "dev-master",
         "bachphuc/shopy": "dev-master",
+        "bachphuc/laravel-gallery-image": "dev-master",
+        "bachphuc/laravel-custom-fields": "dev-master",
         "fideloper/proxy": "~3.3",
         "intervention/image": "^2.5",
         "laravel/framework": "5.5.*",

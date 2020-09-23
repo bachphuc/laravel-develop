@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', 'IndexController@index');
+// Route::get('/', 'IndexController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('users', 'ManageUserController');
 
@@ -25,16 +25,18 @@ Route::group(['prefix' => 'store', 'as' => 'store.'], function(){
     Route::resource('users.books', 'ManageUserBookController');
 });
 
-Route::resource('news', 'ManageNewController');
+// Route::resource('news', 'ManageNewController');
 
 
-Route::group(['prefix' => 'my', 'as' => 'my.'], function(){
-    Route::resource('books', 'ManageMyBookController');
-});
+// Route::group(['prefix' => 'my', 'as' => 'my.'], function(){
+//     Route::resource('books', 'ManageMyBookController');
+// });
 
-Route::get('/shopy', 'IndexController@shopy');
+// Route::get('/shopy', 'IndexController@shopy');
 
 
 Shopy::routes();
 
 Shopy::adminRoutes();
+
+Route::get('admin/test-form', 'ManageController@testForm');
